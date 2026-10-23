@@ -888,7 +888,7 @@ Error generating stack: `+e.message+`
     width: 16px;
     height: 16px;
   }
-`;function Gu(){return(0,V.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,V.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,V.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,V.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,V.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}function Ku({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1);return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Lu,{children:[(0,V.jsx)(Ru,{children:`Connect a device`}),(0,V.jsx)(zu,{children:`Enter the code displayed on your device`}),(0,V.jsx)(Bu,{}),(0,V.jsxs)(wu,{children:[(0,V.jsx)(Vu,{children:`Enter code`}),(0,V.jsx)(Hu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&e.target.value.trim()&&i(!1)},autoComplete:`one-time-code`}),r&&(0,V.jsxs)(Uu,{role:`alert`,children:[(0,V.jsx)(Wu,{children:(0,V.jsx)(Gu,{})}),(0,V.jsx)(`span`,{children:`Enter a code to continue`})]})]}),(0,V.jsx)(Nu,{$fullWidth:!0,children:(0,V.jsx)(rl,{isPrimary:!0,onClick:()=>{t.trim()?(i(!1),e()):i(!0)},children:`Next`})})]})})}var qu=P(Du)`
+`;function Gu(){return(0,V.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,V.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,V.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,V.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,V.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}var Ku=`1234`;function qu({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1);return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Lu,{children:[(0,V.jsx)(Ru,{children:`Connect a device`}),(0,V.jsx)(zu,{children:`Enter the code displayed on your device`}),(0,V.jsx)(Bu,{}),(0,V.jsxs)(wu,{children:[(0,V.jsx)(Vu,{children:`Enter code`}),(0,V.jsx)(Hu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&i(!1)},autoComplete:`one-time-code`}),r&&(0,V.jsxs)(Uu,{role:`alert`,children:[(0,V.jsx)(Wu,{children:(0,V.jsx)(Gu,{})}),(0,V.jsx)(`span`,{children:`This code is invalid or has expired`})]})]}),(0,V.jsx)(Nu,{$fullWidth:!0,children:(0,V.jsx)(rl,{isPrimary:!0,onClick:()=>{t.trim()===Ku?(i(!1),e()):i(!0)},children:`Next`})})]})})}var Ju=P(Du)`
   /* 31/39 so outer edge → content reads 32/40 with the 1px border */
   padding: ${$.space.consentPadTop}px ${$.space.consentPadX}px
     ${$.space.consentPadBottom}px;
@@ -896,16 +896,16 @@ Error generating stack: `+e.message+`
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
   font-weight: ${$.type.body.weight};
-`,Ju=P(Ou)`
+`,Yu=P(Ou)`
   margin-top: ${$.space.section}px;
   margin-bottom: ${$.space.section}px;
   margin-left: -${$.space.consentPadX}px;
   margin-right: -${$.space.consentPadX}px;
   width: calc(100% + ${$.space.consentPadX*2}px);
-`,Yu=P(Ju)`
+`,Xu=P(Yu)`
   margin-top: 32px;
   margin-bottom: 32px;
-`,Xu=P.div`
+`,Zu=P.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -913,38 +913,38 @@ Error generating stack: `+e.message+`
   justify-content: space-between;
   gap: ${$.space.buttonGap}px;
   margin-top: 0;
-`,Zu=P(Fu)`
+`,Qu=P(Fu)`
   margin-top: 0;
   flex: 1;
   min-width: 0;
-`,Qu=P(Pu)`
+`,$u=P(Pu)`
   margin-top: 0;
   flex-shrink: 0;
-`,$u=P.h1`
+`,ed=P.h1`
   margin: ${$.space.stack}px 0 0;
   color: ${$.fg.default};
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
-`,ed=P.div`
+`,td=P.div`
   /* First block: 12px under “This application would be able to:” */
   margin-top: 12px;
 
   & + & {
     margin-top: 20px;
   }
-`,td=P.p`
+`,nd=P.p`
   margin: 0;
   color: ${$.fg.default};
   font-size: ${$.type.bodyBold.size}px;
   line-height: ${$.type.bodyBold.lineHeight};
   font-weight: ${$.type.bodyBold.weight};
-`,nd=P.ul`
+`,rd=P.ul`
   margin: 4px 0 0;
   padding-left: 20px;
   list-style: disc;
   color: ${$.fg.default};
-`,rd=P.li`
+`,id=P.li`
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
@@ -953,13 +953,13 @@ Error generating stack: `+e.message+`
   &::marker {
     color: ${$.fg.default};
   }
-`,id=P.p`
+`,ad=P.p`
   margin: 4px 0 0;
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
   font-weight: ${$.type.body.weight};
-`,ad=P(rl)`
+`,od=P(rl)`
   && {
     background-color: ${$.bg.surface};
     border: 1px solid ${$.fg.primary};
@@ -971,14 +971,14 @@ Error generating stack: `+e.message+`
       color: #284173;
     }
   }
-`,od=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],sd=`Alex Rivera`;function cd({onBack:e,listStyle:t=`bullets`}){return(0,V.jsx)(Eu,{children:(0,V.jsxs)(qu,{$width:$.consentCardWidth,children:[(0,V.jsx)(ku,{children:`Pi`}),(0,V.jsx)(Au,{children:`by Z3n Tests`}),(0,V.jsx)($u,{children:`Allow Pi to access your Zendesk account?`}),(0,V.jsx)(Mu,{children:`Testing out with Pi`}),(0,V.jsx)(Ju,{}),(0,V.jsx)(Mu,{style:{marginTop:0},children:`This application would be able to:`}),od.map(e=>(0,V.jsxs)(ed,{children:[(0,V.jsx)(td,{children:e.title}),t===`plain`?(0,V.jsx)(id,{children:e.detail}):(0,V.jsx)(nd,{children:(0,V.jsx)(rd,{children:e.detail})})]},e.title)),(0,V.jsx)(Yu,{}),(0,V.jsxs)(Xu,{children:[(0,V.jsxs)(Zu,{children:[(0,V.jsxs)(`span`,{children:[`Not `,sd,`?`]}),(0,V.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,V.jsxs)(Qu,{children:[(0,V.jsx)(ad,{type:`button`,onClick:e,children:`Deny`}),(0,V.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})})}var ld=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`Consent – plain text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],ud=P.div`
+`,sd=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],cd=`Alex Rivera`;function ld({onBack:e,listStyle:t=`bullets`}){return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Ju,{$width:$.consentCardWidth,children:[(0,V.jsx)(ku,{children:`Pi`}),(0,V.jsx)(Au,{children:`by Z3n Tests`}),(0,V.jsx)(ed,{children:`Allow Pi to access your Zendesk account?`}),(0,V.jsx)(Mu,{children:`Testing out with Pi`}),(0,V.jsx)(Yu,{}),(0,V.jsx)(Mu,{style:{marginTop:0},children:`This application would be able to:`}),sd.map(e=>(0,V.jsxs)(td,{children:[(0,V.jsx)(nd,{children:e.title}),t===`plain`?(0,V.jsx)(ad,{children:e.detail}):(0,V.jsx)(rd,{children:(0,V.jsx)(id,{children:e.detail})})]},e.title)),(0,V.jsx)(Xu,{}),(0,V.jsxs)(Zu,{children:[(0,V.jsxs)(Qu,{children:[(0,V.jsxs)(`span`,{children:[`Not `,cd,`?`]}),(0,V.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,V.jsxs)($u,{children:[(0,V.jsx)(od,{type:`button`,onClick:e,children:`Deny`}),(0,V.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})})}var ud=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`Consent – plain text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],dd=P.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-`,dd=P.div`
+`,fd=P.div`
   flex: 1;
   min-height: 0;
   display: flex;
   flex-direction: column;
-`;function fd(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,V.jsx)(pr,{children:(0,V.jsxs)(ud,{children:[(0,V.jsx)(Oo,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:ld,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,V.jsx)(dd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,V.jsx)(Ku,{onNext:()=>t(`consent-plain`)}):(0,V.jsx)(cd,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`})}),(0,V.jsx)(Cs,{toggleContainer:n,onActiveChange:a}),(0,V.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,V.jsx)(g.StrictMode,{children:(0,V.jsx)(fd,{})}));
+`;function pd(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,V.jsx)(pr,{children:(0,V.jsxs)(dd,{children:[(0,V.jsx)(Oo,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:ud,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,V.jsx)(fd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,V.jsx)(qu,{onNext:()=>t(`consent-plain`)}):(0,V.jsx)(ld,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`})}),(0,V.jsx)(Cs,{toggleContainer:n,onActiveChange:a}),(0,V.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,V.jsx)(g.StrictMode,{children:(0,V.jsx)(pd,{})}));
