@@ -189,13 +189,15 @@ export function ConsentScreen({ onBack, listStyle = 'bullets' }) {
         <ConsentActions>
           <ConsentFooter>
             <span>Not {USER_NAME}?</span>
-            <TextButton type="button">Sign in as a different user</TextButton>
+            <TextButton type="button" onClick={onBack}>
+              Sign in as a different user
+            </TextButton>
           </ConsentFooter>
           <ConsentButtonRow>
             <OutlineButton type="button" onClick={onBack}>
               Deny
             </OutlineButton>
-            <Button isPrimary type="button">
+            <Button isPrimary type="button" onClick={onBack}>
               Allow
             </Button>
           </ConsentButtonRow>
