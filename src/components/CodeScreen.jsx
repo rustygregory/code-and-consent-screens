@@ -5,7 +5,6 @@ import { Field, Label, Input } from '@zendeskgarden/react-forms'
 import {
   Page,
   Card,
-  BrandMark,
   Title,
   BodyText,
   Divider,
@@ -20,14 +19,9 @@ const CodeCard = styled(Card)`
   color: ${tokens.fg.default};
 `
 
-const CodeBrandMark = styled(BrandMark)`
-  text-align: center;
-  color: ${tokens.fg.default};
-`
-
 const ScreenTitle = styled(Title)`
   text-align: left;
-  margin-top: ${tokens.space.stack}px;
+  margin: 0;
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
@@ -147,7 +141,6 @@ export function CodeScreen({ onNext }) {
   return (
     <Page>
       <CodeCard>
-        <CodeBrandMark>Pi</CodeBrandMark>
         <ScreenTitle>Connect a device</ScreenTitle>
         <Instruction>Enter the code displayed on your device</Instruction>
         <CodeDivider />
