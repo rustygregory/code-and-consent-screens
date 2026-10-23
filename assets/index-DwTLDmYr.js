@@ -821,36 +821,33 @@ Error generating stack: `+e.message+`
   padding: ${$.space.codePadTop}px ${$.space.codePadX}px
     ${$.space.codePadBottom}px;
   color: ${$.fg.default};
-`,Ru=P(ku)`
-  text-align: center;
-  color: ${$.fg.default};
-`,zu=P(ju)`
+`,Ru=P(ju)`
   text-align: left;
-  margin-top: ${$.space.stack}px;
+  margin: 0;
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
   color: ${$.fg.default};
-`,Bu=P(Mu)`
+`,zu=P(Mu)`
   margin-top: 8px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   color: ${$.fg.default};
-`,Vu=P(Ou)`
+`,Bu=P(Ou)`
   margin-top: 20px;
   margin-bottom: ${$.space.section}px;
   margin-left: -${$.space.codePadX}px;
   margin-right: -${$.space.codePadX}px;
   width: calc(100% + ${$.space.codePadX*2}px);
-`,Hu=P(Su)`
+`,Vu=P(Su)`
   && {
     color: ${$.fg.default};
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
   }
-`,Uu=P(Tu)`
+`,Hu=P(Tu)`
   && {
     color: ${$.fg.default};
 
@@ -870,7 +867,7 @@ Error generating stack: `+e.message+`
       }
     }
   }
-`,Wu=P.div`
+`,Uu=P.div`
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -879,7 +876,7 @@ Error generating stack: `+e.message+`
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-`,Gu=P.span`
+`,Wu=P.span`
   flex-shrink: 0;
   width: 16px;
   height: 16px;
@@ -891,7 +888,7 @@ Error generating stack: `+e.message+`
     width: 16px;
     height: 16px;
   }
-`;function Ku(){return(0,V.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,V.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,V.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,V.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,V.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}function qu({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1);return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Lu,{children:[(0,V.jsx)(Ru,{children:`Pi`}),(0,V.jsx)(zu,{children:`Connect a device`}),(0,V.jsx)(Bu,{children:`Enter the code displayed on your device`}),(0,V.jsx)(Vu,{}),(0,V.jsxs)(wu,{children:[(0,V.jsx)(Hu,{children:`Enter code`}),(0,V.jsx)(Uu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&e.target.value.trim()&&i(!1)},autoComplete:`one-time-code`}),r&&(0,V.jsxs)(Wu,{role:`alert`,children:[(0,V.jsx)(Gu,{children:(0,V.jsx)(Ku,{})}),(0,V.jsx)(`span`,{children:`Enter a code to continue`})]})]}),(0,V.jsx)(Nu,{$fullWidth:!0,children:(0,V.jsx)(rl,{isPrimary:!0,onClick:()=>{t.trim()?(i(!1),e()):i(!0)},children:`Next`})})]})})}var Ju=P(Du)`
+`;function Gu(){return(0,V.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,V.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,V.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,V.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,V.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}function Ku({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1);return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Lu,{children:[(0,V.jsx)(Ru,{children:`Connect a device`}),(0,V.jsx)(zu,{children:`Enter the code displayed on your device`}),(0,V.jsx)(Bu,{}),(0,V.jsxs)(wu,{children:[(0,V.jsx)(Vu,{children:`Enter code`}),(0,V.jsx)(Hu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&e.target.value.trim()&&i(!1)},autoComplete:`one-time-code`}),r&&(0,V.jsxs)(Uu,{role:`alert`,children:[(0,V.jsx)(Wu,{children:(0,V.jsx)(Gu,{})}),(0,V.jsx)(`span`,{children:`Enter a code to continue`})]})]}),(0,V.jsx)(Nu,{$fullWidth:!0,children:(0,V.jsx)(rl,{isPrimary:!0,onClick:()=>{t.trim()?(i(!1),e()):i(!0)},children:`Next`})})]})})}var qu=P(Du)`
   /* 31/39 so outer edge → content reads 32/40 with the 1px border */
   padding: ${$.space.consentPadTop}px ${$.space.consentPadX}px
     ${$.space.consentPadBottom}px;
@@ -899,16 +896,16 @@ Error generating stack: `+e.message+`
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
   font-weight: ${$.type.body.weight};
-`,Yu=P(Ou)`
+`,Ju=P(Ou)`
   margin-top: ${$.space.section}px;
   margin-bottom: ${$.space.section}px;
   margin-left: -${$.space.consentPadX}px;
   margin-right: -${$.space.consentPadX}px;
   width: calc(100% + ${$.space.consentPadX*2}px);
-`,Xu=P(Yu)`
+`,Yu=P(Ju)`
   margin-top: 32px;
   margin-bottom: 32px;
-`,Zu=P.div`
+`,Xu=P.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -916,38 +913,38 @@ Error generating stack: `+e.message+`
   justify-content: space-between;
   gap: ${$.space.buttonGap}px;
   margin-top: 0;
-`,Qu=P(Fu)`
+`,Zu=P(Fu)`
   margin-top: 0;
   flex: 1;
   min-width: 0;
-`,$u=P(Pu)`
+`,Qu=P(Pu)`
   margin-top: 0;
   flex-shrink: 0;
-`,ed=P.h1`
+`,$u=P.h1`
   margin: ${$.space.stack}px 0 0;
   color: ${$.fg.default};
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
-`,td=P.div`
+`,ed=P.div`
   /* First block: 12px under “This application would be able to:” */
   margin-top: 12px;
 
   & + & {
     margin-top: 20px;
   }
-`,nd=P.p`
+`,td=P.p`
   margin: 0;
   color: ${$.fg.default};
   font-size: ${$.type.bodyBold.size}px;
   line-height: ${$.type.bodyBold.lineHeight};
   font-weight: ${$.type.bodyBold.weight};
-`,rd=P.ul`
+`,nd=P.ul`
   margin: 4px 0 0;
   padding-left: 20px;
   list-style: disc;
   color: ${$.fg.default};
-`,id=P.li`
+`,rd=P.li`
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
@@ -956,13 +953,13 @@ Error generating stack: `+e.message+`
   &::marker {
     color: ${$.fg.default};
   }
-`,ad=P.p`
+`,id=P.p`
   margin: 4px 0 0;
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
   font-weight: ${$.type.body.weight};
-`,od=P(rl)`
+`,ad=P(rl)`
   && {
     background-color: ${$.bg.surface};
     border: 1px solid ${$.fg.primary};
@@ -974,14 +971,14 @@ Error generating stack: `+e.message+`
       color: #284173;
     }
   }
-`,sd=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],cd=`Alex Rivera`;function ld({onBack:e,listStyle:t=`bullets`}){return(0,V.jsx)(Eu,{children:(0,V.jsxs)(Ju,{$width:$.consentCardWidth,children:[(0,V.jsx)(ku,{children:`Pi`}),(0,V.jsx)(Au,{children:`by Z3n Tests`}),(0,V.jsx)(ed,{children:`Allow Pi to access your Zendesk account?`}),(0,V.jsx)(Mu,{children:`Testing out with Pi`}),(0,V.jsx)(Yu,{}),(0,V.jsx)(Mu,{style:{marginTop:0},children:`This application would be able to:`}),sd.map(e=>(0,V.jsxs)(td,{children:[(0,V.jsx)(nd,{children:e.title}),t===`plain`?(0,V.jsx)(ad,{children:e.detail}):(0,V.jsx)(rd,{children:(0,V.jsx)(id,{children:e.detail})})]},e.title)),(0,V.jsx)(Xu,{}),(0,V.jsxs)(Zu,{children:[(0,V.jsxs)(Qu,{children:[(0,V.jsxs)(`span`,{children:[`Not `,cd,`?`]}),(0,V.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,V.jsxs)($u,{children:[(0,V.jsx)(od,{type:`button`,onClick:e,children:`Deny`}),(0,V.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})})}var ud=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`Consent – plain text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],dd=P.div`
+`,od=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],sd=`Alex Rivera`;function cd({onBack:e,listStyle:t=`bullets`}){return(0,V.jsx)(Eu,{children:(0,V.jsxs)(qu,{$width:$.consentCardWidth,children:[(0,V.jsx)(ku,{children:`Pi`}),(0,V.jsx)(Au,{children:`by Z3n Tests`}),(0,V.jsx)($u,{children:`Allow Pi to access your Zendesk account?`}),(0,V.jsx)(Mu,{children:`Testing out with Pi`}),(0,V.jsx)(Ju,{}),(0,V.jsx)(Mu,{style:{marginTop:0},children:`This application would be able to:`}),od.map(e=>(0,V.jsxs)(ed,{children:[(0,V.jsx)(td,{children:e.title}),t===`plain`?(0,V.jsx)(id,{children:e.detail}):(0,V.jsx)(nd,{children:(0,V.jsx)(rd,{children:e.detail})})]},e.title)),(0,V.jsx)(Yu,{}),(0,V.jsxs)(Xu,{children:[(0,V.jsxs)(Zu,{children:[(0,V.jsxs)(`span`,{children:[`Not `,sd,`?`]}),(0,V.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,V.jsxs)(Qu,{children:[(0,V.jsx)(ad,{type:`button`,onClick:e,children:`Deny`}),(0,V.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})})}var ld=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`Consent – plain text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],ud=P.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-`,fd=P.div`
+`,dd=P.div`
   flex: 1;
   min-height: 0;
   display: flex;
   flex-direction: column;
-`;function pd(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,V.jsx)(pr,{children:(0,V.jsxs)(dd,{children:[(0,V.jsx)(Oo,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:ud,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,V.jsx)(fd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,V.jsx)(qu,{onNext:()=>t(`consent-plain`)}):(0,V.jsx)(ld,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`})}),(0,V.jsx)(Cs,{toggleContainer:n,onActiveChange:a}),(0,V.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,V.jsx)(g.StrictMode,{children:(0,V.jsx)(pd,{})}));
+`;function fd(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,V.jsx)(pr,{children:(0,V.jsxs)(ud,{children:[(0,V.jsx)(Oo,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:ld,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,V.jsx)(dd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,V.jsx)(Ku,{onNext:()=>t(`consent-plain`)}):(0,V.jsx)(cd,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`})}),(0,V.jsx)(Cs,{toggleContainer:n,onActiveChange:a}),(0,V.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,V.jsx)(g.StrictMode,{children:(0,V.jsx)(fd,{})}));
