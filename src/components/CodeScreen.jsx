@@ -125,12 +125,14 @@ function AlertErrorStrokeIcon() {
 /**
  * @param {{ onNext: () => void }} props
  */
+const VALID_CODE = '1234'
+
 export function CodeScreen({ onNext }) {
   const [code, setCode] = useState('')
   const [showError, setShowError] = useState(false)
 
   const handleNext = () => {
-    if (!code.trim()) {
+    if (code.trim() !== VALID_CODE) {
       setShowError(true)
       return
     }
@@ -151,7 +153,7 @@ export function CodeScreen({ onNext }) {
             validation={showError ? 'error' : undefined}
             onChange={(e) => {
               setCode(e.target.value)
-              if (showError && e.target.value.trim()) setShowError(false)
+              if (showError) setShowError(false)
             }}
             autoComplete="one-time-code"
           />
@@ -160,7 +162,7 @@ export function CodeScreen({ onNext }) {
               <ErrorIcon>
                 <AlertErrorStrokeIcon />
               </ErrorIcon>
-              <span>Enter a code to continue</span>
+              <span>This code is invalid or has expired</span>
             </ErrorMessage>
           )}
         </Field>
