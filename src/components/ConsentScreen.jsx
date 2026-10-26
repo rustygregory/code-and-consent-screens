@@ -94,6 +94,18 @@ const Heading = styled.h1`
   font-weight: 700;
 `
 
+const SecureSignInTitle = styled.p`
+  margin: ${tokens.space.tight}px 0 0;
+  color: ${tokens.fg.default};
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+`
+
+const DeviceCodeLine = styled(BodyText)`
+  margin-top: 0;
+`
+
 const PermissionBlock = styled.div`
   /* First block: 12px under “This application would be able to:” */
   margin-top: 12px;
@@ -179,7 +191,12 @@ export function ConsentScreen({
           <BrandMark>Pi</BrandMark>
           <Byline>by Z3n Tests</Byline>
           <Heading>Allow Pi to access your Zendesk account?</Heading>
-          <BodyText>Testing out with Pi</BodyText>
+          <BodyText style={{ marginTop: 4 }}>Testing out with Pi</BodyText>
+          <SecureSignInTitle>Secure connection</SecureSignInTitle>
+          <DeviceCodeLine>
+            Make sure this code matches the one displayed on your device:{' '}
+            <strong>1234</strong>
+          </DeviceCodeLine>
           <ConsentDivider />
         </ConsentHeader>
 

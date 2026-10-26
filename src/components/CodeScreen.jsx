@@ -140,9 +140,14 @@ export function CodeScreen({ onNext }) {
     onNext()
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    handleNext()
+  }
+
   return (
     <Page>
-      <CodeCard>
+      <CodeCard as="form" onSubmit={handleSubmit}>
         <ScreenTitle>Connect a device</ScreenTitle>
         <Instruction>Enter the code displayed on your device</Instruction>
         <CodeDivider />
@@ -167,7 +172,7 @@ export function CodeScreen({ onNext }) {
           )}
         </Field>
         <ButtonStack $fullWidth>
-          <Button isPrimary onClick={handleNext}>
+          <Button isPrimary type="submit">
             Next
           </Button>
         </ButtonStack>
