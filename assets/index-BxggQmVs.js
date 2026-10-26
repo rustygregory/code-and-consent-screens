@@ -888,7 +888,7 @@ Error generating stack: `+e.message+`
     width: 16px;
     height: 16px;
   }
-`;function Gu(){return(0,H.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,H.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,H.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,H.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,H.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}var Ku=`1234`;function qu({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1);return(0,H.jsx)(Eu,{children:(0,H.jsxs)(Lu,{children:[(0,H.jsx)(Ru,{children:`Connect a device`}),(0,H.jsx)(zu,{children:`Enter the code displayed on your device`}),(0,H.jsx)(Bu,{}),(0,H.jsxs)(wu,{children:[(0,H.jsx)(Vu,{children:`Enter code`}),(0,H.jsx)(Hu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&i(!1)},autoComplete:`one-time-code`}),r&&(0,H.jsxs)(Uu,{role:`alert`,children:[(0,H.jsx)(Wu,{children:(0,H.jsx)(Gu,{})}),(0,H.jsx)(`span`,{children:`This code is invalid or has expired`})]})]}),(0,H.jsx)(Nu,{$fullWidth:!0,children:(0,H.jsx)(rl,{isPrimary:!0,onClick:()=>{t.trim()===Ku?(i(!1),e()):i(!0)},children:`Next`})})]})})}var Ju=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],Yu=[{title:`View data across Zendesk`,detail:`Can view information available through Zendesk APIs, including tickets, users, organizations, Help Center content, and account settings. This is broad access and may include related records returned with other data.`},{title:`Read all accounts data`,detail:null},{title:`View installed apps and their settings`,detail:`Includes which apps are installed in the account and each app’s settings.`},{title:`View audit logs`,detail:`Includes the account-wide record of changes: who changed what and when.`},{title:`View automations`,detail:`Includes viewing automations and their details.`},{title:`View brands`,detail:`Includes viewing brands and their agent assignments.`},{title:`View groups`,detail:`Includes viewing groups and their memberships.`},{title:`View help center content`,detail:`Includes articles, sections, categories, community posts and comments.`},{title:`View macros`,detail:`Includes viewing macros, their categories, and their attachments.`},{title:`View support requests`,detail:`Includes submitted requests and their comments.`},{title:`View security and sign-in settings`,detail:`Includes password policy, session timeouts, IP restrictions, and single sign-on configuration.`},{title:`View SLA policies`,detail:`Includes viewing SLA and group SLA policies.`},{title:`View targets and their delivery failures`,detail:`Includes viewing targets and any failures when notifications were sent.`},{title:`View Guide themes`,detail:`Includes the help center’s themes and their files.`},{title:`View ticket views`,detail:`Includes viewing views and the tickets they return.`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View triggers`,detail:`Includes viewing triggers, trigger categories, and their revision history.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`},{title:`View webhooks`,detail:`Includes webhook configurations and their activity history.`},{title:`View private integrations`,detail:`Includes integration configurations, connections, and inbound webhooks.`}],Xu=P(Du)`
+`;function Gu(){return(0,H.jsxs)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`16`,height:`16`,focusable:`false`,viewBox:`0 0 16 16`,"aria-hidden":`true`,children:[(0,H.jsxs)(`g`,{fill:`none`,stroke:`currentColor`,children:[(0,H.jsx)(`circle`,{cx:`7.5`,cy:`8.5`,r:`7`}),(0,H.jsx)(`path`,{strokeLinecap:`round`,d:`M7.5 4.5V9`})]}),(0,H.jsx)(`circle`,{cx:`7.5`,cy:`12`,r:`1`,fill:`currentColor`})]})}var Ku=`1234`;function qu({onNext:e}){let[t,n]=(0,g.useState)(``),[r,i]=(0,g.useState)(!1),a=()=>{t.trim()===Ku?(i(!1),e()):i(!0)};return(0,H.jsx)(Eu,{children:(0,H.jsxs)(Lu,{as:`form`,onSubmit:e=>{e.preventDefault(),a()},children:[(0,H.jsx)(Ru,{children:`Connect a device`}),(0,H.jsx)(zu,{children:`Enter the code displayed on your device`}),(0,H.jsx)(Bu,{}),(0,H.jsxs)(wu,{children:[(0,H.jsx)(Vu,{children:`Enter code`}),(0,H.jsx)(Hu,{value:t,validation:r?`error`:void 0,onChange:e=>{n(e.target.value),r&&i(!1)},autoComplete:`one-time-code`}),r&&(0,H.jsxs)(Uu,{role:`alert`,children:[(0,H.jsx)(Wu,{children:(0,H.jsx)(Gu,{})}),(0,H.jsx)(`span`,{children:`This code is invalid or has expired`})]})]}),(0,H.jsx)(Nu,{$fullWidth:!0,children:(0,H.jsx)(rl,{isPrimary:!0,type:`submit`,children:`Next`})})]})})}var Ju=[{title:`Create, edit, and delete tickets`,detail:`Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.`},{title:`Create, edit, and delete users and manage their access`,detail:`Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.`},{title:`View account settings`,detail:`Includes account configuration, ticket and user fields, and workspaces`},{title:`View groups`,detail:`Includes viewing groups and their memberships`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`}],Yu=[{title:`View data across Zendesk`,detail:`Can view information available through Zendesk APIs, including tickets, users, organizations, Help Center content, and account settings. This is broad access and may include related records returned with other data.`},{title:`Read all accounts data`,detail:null},{title:`View installed apps and their settings`,detail:`Includes which apps are installed in the account and each app’s settings.`},{title:`View audit logs`,detail:`Includes the account-wide record of changes: who changed what and when.`},{title:`View automations`,detail:`Includes viewing automations and their details.`},{title:`View brands`,detail:`Includes viewing brands and their agent assignments.`},{title:`View groups`,detail:`Includes viewing groups and their memberships.`},{title:`View help center content`,detail:`Includes articles, sections, categories, community posts and comments.`},{title:`View macros`,detail:`Includes viewing macros, their categories, and their attachments.`},{title:`View support requests`,detail:`Includes submitted requests and their comments.`},{title:`View security and sign-in settings`,detail:`Includes password policy, session timeouts, IP restrictions, and single sign-on configuration.`},{title:`View SLA policies`,detail:`Includes viewing SLA and group SLA policies.`},{title:`View targets and their delivery failures`,detail:`Includes viewing targets and any failures when notifications were sent.`},{title:`View Guide themes`,detail:`Includes the help center’s themes and their files.`},{title:`View ticket views`,detail:`Includes viewing views and the tickets they return.`},{title:`View tickets`,detail:`Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.`},{title:`View triggers`,detail:`Includes viewing triggers, trigger categories, and their revision history.`},{title:`View users`,detail:`Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.`},{title:`View webhooks`,detail:`Includes webhook configurations and their activity history.`},{title:`View private integrations`,detail:`Includes integration configurations, connections, and inbound webhooks.`}],Xu=P(Du)`
   /* 31/39 so outer edge → content reads 32/40 with the 1px border */
   display: flex;
   flex-direction: column;
@@ -944,7 +944,15 @@ Error generating stack: `+e.message+`
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
-`,od=P.div`
+`,od=P.p`
+  margin: ${$.space.tight}px 0 0;
+  color: ${$.fg.default};
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+`,sd=P(Mu)`
+  margin-top: 0;
+`,cd=P.div`
   /* First block: 12px under “This application would be able to:” */
   margin-top: 12px;
 
@@ -955,18 +963,18 @@ Error generating stack: `+e.message+`
   &:last-child {
     margin-bottom: 0;
   }
-`,sd=P.p`
+`,ld=P.p`
   margin: 0;
   color: ${$.fg.default};
   font-size: ${$.type.bodyBold.size}px;
   line-height: ${$.type.bodyBold.lineHeight};
   font-weight: ${$.type.bodyBold.weight};
-`,cd=P.ul`
+`,ud=P.ul`
   margin: 0;
   padding-left: 20px;
   list-style: disc;
   color: ${$.fg.default};
-`,ld=P.li`
+`,dd=P.li`
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
@@ -975,13 +983,13 @@ Error generating stack: `+e.message+`
   &::marker {
     color: ${$.fg.default};
   }
-`,ud=P.p`
+`,fd=P.p`
   margin: 0;
   color: ${$.fg.default};
   font-size: ${$.type.body.size}px;
   line-height: ${$.type.body.lineHeight};
   font-weight: ${$.type.body.weight};
-`,dd=P(rl)`
+`,pd=P(rl)`
   && {
     background-color: ${$.bg.surface};
     border: 1px solid ${$.fg.primary};
@@ -993,14 +1001,14 @@ Error generating stack: `+e.message+`
       color: #284173;
     }
   }
-`,fd=`Alex Rivera`;function pd({onBack:e,listStyle:t=`bullets`,permissions:n=`short`}){let r=n===`long`?Yu:Ju;return(0,H.jsx)(Eu,{children:(0,H.jsxs)(Xu,{$width:$.consentCardWidth,children:[(0,H.jsxs)(Zu,{children:[(0,H.jsx)(ku,{children:`Pi`}),(0,H.jsx)(Au,{children:`by Z3n Tests`}),(0,H.jsx)(ad,{children:`Allow Pi to access your Zendesk account?`}),(0,H.jsx)(Mu,{children:`Testing out with Pi`}),(0,H.jsx)(ed,{})]}),(0,H.jsxs)(Qu,{children:[(0,H.jsx)(Mu,{as:`div`,style:{marginTop:0,marginBottom:0},children:`This application would be able to:`}),r.map(e=>(0,H.jsxs)(od,{children:[(0,H.jsx)(sd,{children:e.title}),e.detail&&(t===`plain`?(0,H.jsx)(ud,{children:e.detail}):(0,H.jsx)(cd,{children:(0,H.jsx)(ld,{children:e.detail})}))]},e.title))]}),(0,H.jsxs)($u,{children:[(0,H.jsx)(td,{}),(0,H.jsxs)(nd,{children:[(0,H.jsxs)(rd,{children:[(0,H.jsxs)(`span`,{children:[`Not `,fd,`?`]}),(0,H.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,H.jsxs)(id,{children:[(0,H.jsx)(dd,{type:`button`,onClick:e,children:`Deny`}),(0,H.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})]})})}var md=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`V1 Consent – plain text`},{id:`consent-long`,label:`V2 Consent – long text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],hd=P.div`
+`,md=`Alex Rivera`;function hd({onBack:e,listStyle:t=`bullets`,permissions:n=`short`}){let r=n===`long`?Yu:Ju;return(0,H.jsx)(Eu,{children:(0,H.jsxs)(Xu,{$width:$.consentCardWidth,children:[(0,H.jsxs)(Zu,{children:[(0,H.jsx)(ku,{children:`Pi`}),(0,H.jsx)(Au,{children:`by Z3n Tests`}),(0,H.jsx)(ad,{children:`Allow Pi to access your Zendesk account?`}),(0,H.jsx)(Mu,{style:{marginTop:4},children:`Testing out with Pi`}),(0,H.jsx)(od,{children:`Secure connection`}),(0,H.jsxs)(sd,{children:[`Make sure this code matches the one displayed on your device:`,` `,(0,H.jsx)(`strong`,{children:`1234`})]}),(0,H.jsx)(ed,{})]}),(0,H.jsxs)(Qu,{children:[(0,H.jsx)(Mu,{as:`div`,style:{marginTop:0,marginBottom:0},children:`This application would be able to:`}),r.map(e=>(0,H.jsxs)(cd,{children:[(0,H.jsx)(ld,{children:e.title}),e.detail&&(t===`plain`?(0,H.jsx)(fd,{children:e.detail}):(0,H.jsx)(ud,{children:(0,H.jsx)(dd,{children:e.detail})}))]},e.title))]}),(0,H.jsxs)($u,{children:[(0,H.jsx)(td,{}),(0,H.jsxs)(nd,{children:[(0,H.jsxs)(rd,{children:[(0,H.jsxs)(`span`,{children:[`Not `,md,`?`]}),(0,H.jsx)(Iu,{type:`button`,onClick:e,children:`Sign in as a different user`})]}),(0,H.jsxs)(id,{children:[(0,H.jsx)(pd,{type:`button`,onClick:e,children:`Deny`}),(0,H.jsx)(rl,{isPrimary:!0,type:`button`,onClick:e,children:`Allow`})]})]})]})]})})}var gd=[{id:`code`,label:`Code entry`},{id:`consent-plain`,label:`V1 Consent – plain text`},{id:`consent-long`,label:`V2 Consent – long text`},{id:`consent`,label:`Consent – bullets`,archived:!0}],_d=P.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-`,gd=P.div`
+`,vd=P.div`
   flex: 1;
   min-height: 0;
   display: flex;
   flex-direction: column;
-`;function _d(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,H.jsx)(pr,{children:(0,H.jsxs)(hd,{children:[(0,H.jsx)(Do,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:md,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,H.jsx)(gd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,H.jsx)(qu,{onNext:()=>t(`consent-plain`)}):(0,H.jsx)(pd,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`,permissions:e===`consent-long`?`long`:`short`})}),(0,H.jsx)(Ss,{toggleContainer:n,onActiveChange:a}),(0,H.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,H.jsx)(g.StrictMode,{children:(0,H.jsx)(_d,{})}));
+`;function yd(){let[e,t]=(0,g.useState)(`code`),[n,r]=(0,g.useState)(null),[i,a]=(0,g.useState)(!1),[o,s]=(0,g.useState)(null);return(0,H.jsx)(pr,{children:(0,H.jsxs)(_d,{children:[(0,H.jsx)(Do,{title:`Code and Consent screens`,meta:`Started Oct 2026`,versions:gd,versionId:e,onVersionChange:t,inspectSlotRef:r,commentSlotRef:s,inspectActive:i}),(0,H.jsx)(vd,{"data-comment-root":`true`,"data-inspect-root":`true`,children:e===`code`?(0,H.jsx)(qu,{onNext:()=>t(`consent-plain`)}):(0,H.jsx)(hd,{onBack:()=>t(`code`),listStyle:e===`consent`?`bullets`:`plain`,permissions:e===`consent-long`?`long`:`short`})}),(0,H.jsx)(Ss,{toggleContainer:n,onActiveChange:a}),(0,H.jsx)(Pc,{toggleContainer:o,context:{version:e},onRestoreContext:e=>{e.version&&t(e.version)}})]})})}(0,_.createRoot)(document.getElementById(`root`)).render((0,H.jsx)(g.StrictMode,{children:(0,H.jsx)(yd,{})}));
