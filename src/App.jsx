@@ -9,7 +9,8 @@ import { ConsentScreen } from './components/ConsentScreen'
 
 const VERSIONS = [
   { id: 'code', label: 'Code entry' },
-  { id: 'consent-plain', label: 'Consent – plain text' },
+  { id: 'consent-plain', label: 'V1 Consent – plain text' },
+  { id: 'consent-long', label: 'V2 Consent – long text' },
   { id: 'consent', label: 'Consent – bullets', archived: true },
 ]
 
@@ -33,6 +34,8 @@ function App() {
   const [inspectActive, setInspectActive] = useState(false)
   const [commentSlot, setCommentSlot] = useState(null)
 
+  const isConsent = step !== 'code'
+
   return (
     <ThemeProvider>
       <Shell>
@@ -47,12 +50,13 @@ function App() {
           inspectActive={inspectActive}
         />
         <WorkArea data-comment-root="true" data-inspect-root="true">
-          {step === 'code' ? (
+          {!isConsent ? (
             <CodeScreen onNext={() => setStep('consent-plain')} />
           ) : (
             <ConsentScreen
               onBack={() => setStep('code')}
               listStyle={step === 'consent' ? 'bullets' : 'plain'}
+              permissions={step === 'consent-long' ? 'long' : 'short'}
             />
           )}
         </WorkArea>

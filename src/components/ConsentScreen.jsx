@@ -12,9 +12,14 @@ import {
   TextButton,
 } from './AuthCard'
 import { tokens } from '../tokens'
+import { PERMISSIONS_SHORT, PERMISSIONS_LONG } from '../data/permissions'
 
 const ConsentCard = styled(Card)`
   /* 31/39 so outer edge → content reads 32/40 with the 1px border */
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow: hidden;
   padding: ${tokens.space.consentPadTop}px ${tokens.space.consentPadX}px
     ${tokens.space.consentPadBottom}px;
   color: ${tokens.fg.default};
@@ -23,18 +28,40 @@ const ConsentCard = styled(Card)`
   font-weight: ${tokens.type.body.weight};
 `
 
-/** Full-bleed across the modal */
+const ConsentHeader = styled.div`
+  flex-shrink: 0;
+`
+
+/** Scrolls between the title divider and the bottom-nav divider.
+ *  Scrollbar sits 4px from the modal’s right edge (outside content margins). */
+const ConsentScrollBody = styled.div`
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: calc(-${tokens.space.consentPadX}px + 4px);
+  padding-right: calc(${tokens.space.consentPadX}px - 4px);
+  box-sizing: border-box;
+`
+
+const ConsentFooterBar = styled.div`
+  flex-shrink: 0;
+`
+
+/** Full-bleed line under the title block — flush to the scroll edge */
 const ConsentDivider = styled(Divider)`
   margin-top: ${tokens.space.section}px;
-  margin-bottom: ${tokens.space.section}px;
+  margin-bottom: 0;
   margin-left: -${tokens.space.consentPadX}px;
   margin-right: -${tokens.space.consentPadX}px;
   width: calc(100% + ${tokens.space.consentPadX * 2}px);
 `
 
-/** Full-bleed; 32px below content, 32px above bottom actions */
+/** Full-bleed line above the bottom nav — flush to the scroll edge */
 const ActionsDivider = styled(ConsentDivider)`
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 32px;
 `
 
@@ -74,6 +101,10 @@ const PermissionBlock = styled.div`
   & + & {
     margin-top: 20px;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 const PermissionTitle = styled.p`
@@ -85,7 +116,7 @@ const PermissionTitle = styled.p`
 `
 
 const PermissionBullets = styled.ul`
-  margin: 4px 0 0;
+  margin: 0;
   padding-left: 20px;
   list-style: disc;
   color: ${tokens.fg.default};
@@ -103,7 +134,7 @@ const PermissionDetail = styled.li`
 `
 
 const PermissionBody = styled.p`
-  margin: 4px 0 0;
+  margin: 0;
   color: ${tokens.fg.default};
   font-size: ${tokens.type.body.size}px;
   line-height: ${tokens.type.body.lineHeight};
@@ -124,84 +155,72 @@ const OutlineButton = styled(Button)`
   }
 `
 
-const PERMISSIONS = [
-  {
-    title: 'Create, edit, and delete tickets',
-    detail:
-      'Includes adding comments, adding and removing tags, merging tickets, marking tickets as spam, attaching uploaded files, managing ticket forms and custom statuses, and permanently deleting tickets.',
-  },
-  {
-    title: 'Create, edit, and delete users and manage their access',
-    detail:
-      'Includes resetting passwords, ending active sessions, adding and verifying identities, changing group, organization, and brand memberships, and managing custom roles.',
-  },
-  {
-    title: 'View account settings',
-    detail:
-      'Includes account configuration, ticket and user fields, and workspaces',
-  },
-  {
-    title: 'View groups',
-    detail: 'Includes viewing groups and their memberships',
-  },
-  {
-    title: 'View tickets',
-    detail:
-      'Includes ticket contents, comments and conversation history, tags, forms and fields, audits, events, and metrics.',
-  },
-  {
-    title: 'View users',
-    detail:
-      'Includes their identities, active sessions, group, organization, and brand memberships, roles, and settings.',
-  },
-]
-
 const USER_NAME = 'Alex Rivera'
 
 /**
- * @param {{ onBack?: () => void, listStyle?: 'bullets' | 'plain' }} props
+ * @param {{
+ *   onBack?: () => void,
+ *   listStyle?: 'bullets' | 'plain',
+ *   permissions?: 'short' | 'long',
+ * }} props
  */
-export function ConsentScreen({ onBack, listStyle = 'bullets' }) {
+export function ConsentScreen({
+  onBack,
+  listStyle = 'bullets',
+  permissions = 'short',
+}) {
+  const items =
+    permissions === 'long' ? PERMISSIONS_LONG : PERMISSIONS_SHORT
+
   return (
     <Page>
       <ConsentCard $width={tokens.consentCardWidth}>
-        <BrandMark>Pi</BrandMark>
-        <Byline>by Z3n Tests</Byline>
-        <Heading>Allow Pi to access your Zendesk account?</Heading>
-        <BodyText>Testing out with Pi</BodyText>
-        <ConsentDivider />
-        <BodyText style={{ marginTop: 0 }}>
-          This application would be able to:
-        </BodyText>
-        {PERMISSIONS.map((item) => (
-          <PermissionBlock key={item.title}>
-            <PermissionTitle>{item.title}</PermissionTitle>
-            {listStyle === 'plain' ? (
-              <PermissionBody>{item.detail}</PermissionBody>
-            ) : (
-              <PermissionBullets>
-                <PermissionDetail>{item.detail}</PermissionDetail>
-              </PermissionBullets>
-            )}
-          </PermissionBlock>
-        ))}
-        <ActionsDivider />
-        <ConsentActions>
-          <ConsentFooter>
-            <span>Not {USER_NAME}?</span>
-            <TextButton type="button" onClick={onBack}>
-              Sign in as a different user
-            </TextButton>
-          </ConsentFooter>
-          <ConsentButtonRow>
-            <OutlineButton type="button" onClick={onBack}>
-              Deny
-            </OutlineButton>
-            <Button isPrimary type="button" onClick={onBack}>
-              Allow
-            </Button>
-          </ConsentButtonRow>
-        </ConsentActions>
+        <ConsentHeader>
+          <BrandMark>Pi</BrandMark>
+          <Byline>by Z3n Tests</Byline>
+          <Heading>Allow Pi to access your Zendesk account?</Heading>
+          <BodyText>Testing out with Pi</BodyText>
+          <ConsentDivider />
+        </ConsentHeader>
+
+        <ConsentScrollBody>
+          <BodyText as="div" style={{ marginTop: 0, marginBottom: 0 }}>
+            This application would be able to:
+          </BodyText>
+          {items.map((item) => (
+            <PermissionBlock key={item.title}>
+              <PermissionTitle>{item.title}</PermissionTitle>
+              {item.detail &&
+                (listStyle === 'plain' ? (
+                  <PermissionBody>{item.detail}</PermissionBody>
+                ) : (
+                  <PermissionBullets>
+                    <PermissionDetail>{item.detail}</PermissionDetail>
+                  </PermissionBullets>
+                ))}
+            </PermissionBlock>
+          ))}
+        </ConsentScrollBody>
+
+        <ConsentFooterBar>
+          <ActionsDivider />
+          <ConsentActions>
+            <ConsentFooter>
+              <span>Not {USER_NAME}?</span>
+              <TextButton type="button" onClick={onBack}>
+                Sign in as a different user
+              </TextButton>
+            </ConsentFooter>
+            <ConsentButtonRow>
+              <OutlineButton type="button" onClick={onBack}>
+                Deny
+              </OutlineButton>
+              <Button isPrimary type="button" onClick={onBack}>
+                Allow
+              </Button>
+            </ConsentButtonRow>
+          </ConsentActions>
+        </ConsentFooterBar>
       </ConsentCard>
     </Page>
   )
